@@ -18,8 +18,8 @@ $('.navi').on('mouseleave', onNaviLeave)
 	$(this).next().stop().slideToggle(500)
 } */
 function onNaviEnter() {
-	$('.sub-wrap').stop().slideUp(0)
-	$(this).find('.sub-wrap').stop().slideDown(300)
+	$('.sub-wrap').stop().slideUp(0) //이전에 나온 슬라이드 0초만에 없애고
+	$(this).find('.sub-wrap').stop().slideDown(300) //나오게 함
 }
 function onNaviLeave() {
 	$('.sub-wrap').stop().slideUp(300)
